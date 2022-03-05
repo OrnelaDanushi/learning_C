@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{	int x; int y; int z; int max; 
+	scanf("%d",&x);
+	scanf("%d",&y);
+	scanf("%d",&z);
+	if (x>=y && x>=z) max=x;
+	if (y>=x && y>=z) max=y;
+	if (z>=x && z>=y) max=z;
+	printf("il valore massimo e' %d\n",max);
+	return 0;
+}
