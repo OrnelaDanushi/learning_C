@@ -1,5 +1,9 @@
-/*TEMPCONVERTER: Scrivere un programma che legga da tastiera un valore di temperatura (anche decimale) espresso in gradi Celsius e ne stampi la conversione in gradi Fahrenheit usando due cifre decimali. Per convertire un valore da Celsius a Fahrenheit si ha che F=C*1.8 + 32
+/*TEMPCONVERTER: 
+Scrivere un programma che legga da tastiera un valore di temperatura (anche decimale) 
+espresso in gradi Celsius e ne stampi la conversione in gradi Fahrenheit 
+usando due cifre decimali. Per convertire un valore da Celsius a Fahrenheit si ha che F=C*1.8 + 32
 Input: 10		Output: 50.00 */
+
 #include<stdio.h>
 int main(){
 	float c, f;
