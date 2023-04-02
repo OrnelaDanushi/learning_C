@@ -1,4 +1,6 @@
-/*RETTANGOLI: Scrivere un programma che legga da tatiera 2 interi h e l e stampi un rettangolo fatto da asterischi, con altezza h e lunghezza l.
+/*RETTANGOLI: 
+Scrivere un programma che legga da tatiera 2 interi h e l 
+e stampi un rettangolo fatto da asterischi, con altezza h e lunghezza l.
 Input:	5	10	Output:	**********		
 				*	 *						
 				*	 *						
