@@ -1,6 +1,12 @@
-/*SOTTOSUCCESSIONE: Scrivere un programma che legga da tastiera una sequenza di 10 interi scrivendola in un array, quindi stampi (uno per linea, e nello stesso ordine in cui sono stati immessi) i valori della sequenza che rispettano una di queste due proprieta': siano positivi e pari, oppure siano negativi e succeduti da un valore positivo. NB: Lo 0 e' considerato un valore positivo
+/*SOTTOSUCCESSIONE: 
+Scrivere un programma che legga da tastiera una sequenza di 10 interi scrivendola in un array, 
+quindi stampi (uno per linea, e nello stesso ordine in cui sono stati immessi) 
+i valori della sequenza che rispettano una di queste due proprieta': 
+siano positivi e pari, oppure siano negativi e succeduti da un valore positivo. 
+NB: Lo 0 e' considerato un valore positivo
 input	13	-3	-5	5	0	2	-3	-6	3	-8
 output	-5	0	2	-6 */
+
 #include<stdio.h>
 int main(){
 	int a[10], i;
