@@ -1,4 +1,6 @@
-/*VETTORI: Scrivere un programma che legga da tastiera due vettori interi di dimensione 5 (10 numeri interi in totale) e stampi prima i due vettori, poi la loro somma.
+/*VETTORI: 
+Scrivere un programma che legga da tastiera due vettori interi di dimensione 5 
+(10 numeri interi in totale) e stampi prima i due vettori, poi la loro somma.
 Input:	5	12	34	67	89	13	25	38	62	10
 Output:	[5,12,34,67,89]	[13,25,38,62,10]	[18,37,72,129,99]
 Input:	-1	1	1	-1	1	1	-1	-1	1	1
