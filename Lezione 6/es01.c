@@ -1,12 +1,15 @@
-/*FUNZIONE MODULO DIFFERENZA: Si realizzi un programma C che contenga una funzione diff_abs che prenda come parametri 2 float (a e b) e la cui esecuzione faccia si che la variabile corrispondente al primo argomento contenga il valore di a-b, mentre la seconda variabile corrispondente al secondo argomento contenga b-a. Si stampi a video il contenuto delle 2 variabili all'uscita dall'esecuzione della funzione, con precisione alla seconda cifra decimale.
+/*FUNZIONE MODULO DIFFERENZA: 
+Si realizzi un programma che contenga una funzione diff_abs che 
+prenda come parametri 2 float (a e b) e la cui esecuzione faccia si che la variabile 
+corrispondente al primo argomento contenga il valore di a-b, 
+mentre la seconda variabile corrispondente al secondo argomento contenga b-a. 
+Si stampi a video il contenuto delle 2 variabili all'uscita dall'esecuzione della funzione, 
+con precisione alla seconda cifra decimale.
 Input:	3.14	-2.71	Output:	5.85	-5.85	*/
+
 #include<stdio.h>
-float diffabs1(float x, float y){
-	return x-y;
-}
-float diffabs2(float x, float y){
-	return y-x;
-}
+float diffabs1(float x, float y){	return x-y; }
+float diffabs2(float x, float y){	return y-x; }
 int main(){
 	float a, b;
 	scanf("%f",&a);
