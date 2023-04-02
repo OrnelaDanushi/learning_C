@@ -1,4 +1,9 @@
-/*MOLTIPLICAZIONE MATRICI: Si legga dall'input 3 interi n, m, t, poi una matrice di interi di dimensione n*m (n righe, m colonne) e una seconda matrice di dimensione m*t. Per ogni matrice i valori dati in input sono ordinati per riga (per la prima matrice i primi m interi sono i valori della prima riga della matrice, e cosi via). Si usi una funzione per leggere le matrici. Si scrivi una seconda funzione che moltiplichi le due matrici e restituisca la matrice risultato (n*t). Si stampi il risultato nella funzione main.
+/*MOLTIPLICAZIONE MATRICI: 
+Si legga dall'input 3 interi n, m, t, poi una matrice di interi di dimensione n*m (n righe, m colonne) 
+e una seconda matrice di dimensione m*t. Per ogni matrice i valori dati in input sono ordinati 
+per riga (per la prima matrice i primi m interi sono i valori della prima riga della matrice, e cosi via). 
+Si usi una funzione per leggere le matrici. Si scrivi una seconda funzione che moltiplichi le due matrici 
+e restituisca la matrice risultato (n*t). Si stampi il risultato nella funzione main.
 Input:	4//n	2//m	3//t	5	3	5	6	5	21	5	6	1	0	2	2	1	1
 Matrice A:	5 3		Matrice b:	1 0 2		Output:	11 3 13
 		5 6				2 1 1			17 6 16
