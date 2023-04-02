@@ -1,5 +1,10 @@
-/*ALLOCAZIONE DINAMICA ARRAY: Si realizzi un programma che legga un intero N da tastiera e lo passi ad una funzione che alloca un array di dimensione N e lo riempie con i valori dei primi N multipli di 5. Nel main si stampi a video il contenuto dell'array restituito dalla funzione. Assunzione: N e' un intero strettamente maggiore di 0.
+/*ALLOCAZIONE DINAMICA ARRAY: 
+Si realizzi un programma che legga un intero N da tastiera e lo passi ad una funzione che 
+alloca un array di dimensione N e lo riempie con i valori dei primi N multipli di 5. 
+Nel main si stampi a video il contenuto dell'array restituito dalla funzione. 
+Assunzione: N e' un intero strettamente maggiore di 0.
 Input:	5		Output:	5	10	15	20	25	*/
+
 #include<stdio.h>
 #include<stdlib.h>
 void allocazione(int n, int *a){
