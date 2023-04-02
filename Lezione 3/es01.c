@@ -1,4 +1,7 @@
-/*SIZEOF:Scrivere un programma che legga da tastiera un numero intero x e stabilisca il numero di byte necessario a memorizzare x variabili di tipo intero*/
+/*SIZEOF:
+Scrivere un programma che legga da tastiera un numero intero x 
+e stabilisca il numero di byte necessario a memorizzare x variabili di tipo intero*/
+
 #include<stdio.h>
 int main(){
 	int x;
