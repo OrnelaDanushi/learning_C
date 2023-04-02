@@ -1,6 +1,11 @@
-/*MATRICI: Si legga dall'input una matrice di interi di dimensione 4*3 (4 righe, 3 colonne). I valori dati in input sono ordinati per riga (i primi 3 interi sono i valori della prima riga della matrice, e cosi via). Si stampi l'indice dell'ultima colonna che contiene solo multipli di 3, o si stampi -1 nel caso che nessuna colonna rispetti questa proprieta'. 
+/*MATRICI: 
+Si legga dall'input una matrice di interi di dimensione 4*3 (4 righe, 3 colonne). 
+I valori dati in input sono ordinati per riga (i primi 3 interi sono i valori della prima riga della matrice, 
+e cosi via). Si stampi l'indice dell'ultima colonna che contiene solo multipli di 3, 
+o si stampi -1 nel caso che nessuna colonna rispetti questa proprieta'. 
 Input:	5	3	12	5	6	6	5	21	3	5	6	24
 Output:	2	*/
+
 #include<stdio.h>
 int main(){
 	int a[4][3], i, j, colonna=-1, trovato=0, conta=0;
@@ -51,9 +56,7 @@ int main(){
 			j--;
 		}
 	}
-	if(trovato!=4)
-		printf("-1\n");
-	else if(trovato==4)
-		printf("%d\n", ris);
+	if(trovato!=4)		printf("-1\n");
+	else if(trovato==4)	printf("%d\n", ris);
 	return 0;
 }
