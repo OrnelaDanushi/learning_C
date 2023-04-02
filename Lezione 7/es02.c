@@ -1,16 +1,30 @@
-/*STUDENTI: Si scriva un programma di gestione studenti che legga dall'input un intero n, quindi per n volte, si legga uno studente, definito come:
+/*STUDENTI: 
+Si scriva un programma di gestione studenti che legga dall'input un intero n, quindi per n volte, 
+si legga uno studente, definito come:
 -una matricola (un intero);
 -un'eta' (un intero);
 -il sesso (un intero, 0 per maschio, 1 per femmina);
 Dopodiche' si legge un intero m. A questo punto:
--Stampare la media e la varianza dell'eta' degli studenti maschi (uno per riga, 2 cifre decimali). Stampare media e varianza uguale a 0 se non ci sono studenti maschi.
--Stampare la media e la varianza dell'eta' delle studentesse (uno per riga, 2 cifre decimali). Stampare media e varianza uguale a 0 se non ci sono studentesse.
+-Stampare la media e la varianza dell'eta' degli studenti maschi (uno per riga, 2 cifre decimali). 
+Stampare media e varianza uguale a 0 se non ci sono studenti maschi.
+-Stampare la media e la varianza dell'eta' delle studentesse (uno per riga, 2 cifre decimali). 
+Stampare media e varianza uguale a 0 se non ci sono studentesse.
 -Stampare le seguenti informazioni, una per riga:
 	-eta' dello studente con matricola m
-	-sesso dello studente con matricola m. Anziche' stampare l'intero, stampare il carattere 'M' se lo studente e' maschio, 'F' se e' femmina. Se lo studente m non e' presente, stampare -1 sia per l'eta' che per il sesso. 
-Ricordiamo che la varianza e' definita come: var=((x1 -mu)^2 + (x2 -mu)^2 +...+(xn -mu)^2)/(N-1) dove N e' il numero degli studenti maschi, x1,x2,...,xn sono le eta' degli studenti maschi, e mu e' la media delle eta' degli studenti maschi (usare la stessa formula con i dovuti cambiamenti per la varianza delle studentesse). N.B: si consiglia di definirsi opportunatamente una struct di nome studente ed un enumerazione per definire il sesso dello studente.
+	-sesso dello studente con matricola m. 
+	Anziche' stampare l'intero, stampare il carattere 'M' se lo studente e' maschio, 'F' se e' femmina. 
+	Se lo studente m non e' presente, stampare -1 sia per l'eta' che per il sesso. 
+Ricordiamo che la varianza e' definita come: 
+var=((x1 -mu)^2 + (x2 -mu)^2 +...+(xn -mu)^2)/(N-1) 
+dove N e' il numero degli studenti maschi, 
+x1,x2,...,xn sono le eta' degli studenti maschi, 
+e mu e' la media delle eta' degli studenti maschi 
+(usare la stessa formula con i dovuti cambiamenti per la varianza delle studentesse). 
+N.B: si consiglia di definirsi opportunatamente una struct di nome studente 
+ed un enumerazione per definire il sesso dello studente.
 Input:	3	112345	19	1	223456	20	0	998724	27	0	223456
 Output:	23.50	24.50	19.00	0.00	20	M	*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #define VALORE 100
