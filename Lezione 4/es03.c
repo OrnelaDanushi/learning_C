@@ -1,8 +1,12 @@
-/*VERIFICA DI CONDIZIONE: Scrivere un programma che legga da tastiera 10 interi, li scriva in un array A e stampi l'indice del primo elemento che verifica la seguente condizione: A[i]=A[i+1]-A[i-1] oppure stampi -1 nel caso in cui nessun elemento verifichi la suddetta condizione.
+/*VERIFICA DI CONDIZIONE: 
+Scrivere un programma che legga da tastiera 10 interi, li scriva in un array A 
+e stampi l'indice del primo elemento che verifica la seguente condizione: 
+A[i]=A[i+1]-A[i-1] oppure stampi -1 nel caso in cui nessun elemento verifichi la suddetta condizione.
 input	9	5	-2	3	5	50	4	-7	0	-7
 output	2
 input	9	5	-1	3	6	8	1	0	-7	5
 output	-1	*/
+
 #include <stdio.h>
 int main(){
 	int a[10],i,trovato=0;
