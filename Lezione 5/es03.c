@@ -1,6 +1,12 @@
-/*SOMMA DI POTENZE: Si realizzi un programma nel linguaggio C che legga da input un intero n ed un floating point x>0 e, utilizzando una funzione sumpow calcoli la somma delle potenze di x, da 0 ad n (ovvero, il valore s=x^0 +x^1 +x^2 +.. +x^n. Il valore restituito dalla funzione deve essere stampato sullo standard output. Il risultato deve essere stampato con esattamente due cifre decimali.
+/*SOMMA DI POTENZE: 
+Si realizzi un programma che legga da input un intero n ed un floating point x>0 e, 
+utilizzando una funzione sumpow calcoli la somma delle potenze di x, 
+da 0 ad n (ovvero, il valore s=x^0 +x^1 +x^2 +.. +x^n. 
+Il valore restituito dalla funzione deve essere stampato sullo standard output. 
+Il risultato deve essere stampato con esattamente due cifre decimali.
 input:	5	2
 output:	63.00	*/
+
 #include<stdio.h>
 float sumpow(float x,int n){
 	if(n==0)	return 1;
@@ -15,9 +21,9 @@ int main(){
 	scanf("%f",&b);
 	for(i=a; i>=0; i--)
 		risultato+=sumpow(b,i);	
-//oppure
-//	for(i=0; i<=n; i++)
-//		ris=ris+sumpow(i,x);
+	//oppure
+	// for(i=0; i<=n; i++)
+	//	ris=ris+sumpow(i,x);
 
 	printf("%.2f\n",risultato);
 	return 0;
