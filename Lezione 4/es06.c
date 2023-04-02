@@ -1,6 +1,12 @@
-/*ASTERISCHI: Scrivere un programma che legga da tastiera un numero intero n e stampi n asterischi sulla prima linea, n-2 asterischi sulla seconda linea, n-4 sulla terza e cosi via, fino ad arrivare a stampare uno o due asterischi sull'ultima linea.
+/*ASTERISCHI: 
+Scrivere un programma che legga da tastiera un numero intero n e stampi 
+n asterischi sulla prima linea, 
+n-2 asterischi sulla seconda linea, 
+n-4 sulla terza e cosi via, 
+fino ad arrivare a stampare uno o due asterischi sull'ultima linea.
 Input:	5	Output:	*****	***	*
 Input:	8	Output:	********	******	****	**	*/
+
 #include<stdio.h>
 int main(){
 	int n, i, ast;
