@@ -1,11 +1,19 @@
-/*GESTIONE PRL: Si scriva un programma per la gestione degli esercizi del corso di PRL. Si legga da tastiera un intero n, dopodiche' per n volte si legga:
+/*GESTIONE PRL: 
+Si scriva un programma per la gestione degli esercizi del corso di PRL. 
+Si legga da tastiera un intero n, dopodiche' per n volte si legga:
 -il numero della lezione (un intero);
 -l'identificatore dell'esercizio (un intero);
 -il numero di studenti che hanno svolto l'esercizio (un intero);
 -le matricole degli studenti che hanno svolto l'esercizio (una per riga, ogni matricola e' un intero).
-A questo punto si legga un intero m. Si stampino quindi il numero della lezione e l'identificatore di tutti igli esercizi svolti dallo studente con matricola m, uno per riga, nel formato [NumeroLezione].[Identificatore]. Ad es. per indicare che lo studente con matricola m ha risolto soltanto il secondo esercizio della terza lezione, si stampera' la stringa 3.2. Se lo studente non ha risolto nessun esercizio, non bisogna stampare niente.
+A questo punto si legga un intero m. 
+Si stampino quindi il numero della lezione e l'identificatore di tutti igli esercizi svolti dallo studente 
+con matricola m, uno per riga, nel formato [NumeroLezione].[Identificatore]. 
+Ad es. per indicare che lo studente con matricola m ha risolto soltanto 
+il secondo esercizio della terza lezione, si stampera' la stringa 3.2. 
+Se lo studente non ha risolto nessun esercizio, non bisogna stampare niente.
 Input:	2	1	1	3	452341	998721	998124	1	2	1	998721	998721	
 Output:	1.1	1.2	*/
+
 #include<stdio.h>
 #include<stdlib.h>
 int i=0;
