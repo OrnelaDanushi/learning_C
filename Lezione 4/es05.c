@@ -1,7 +1,12 @@
-/*SUCCESSIONE DI FIBONACCI: Scrivere un programma che legga da tastiera un numero intero n con n>=0 e stampi i valori della successione di Fibonacci, uno per riga, fino al primo valore della successione strettamente maggiore di n (questo valore non va stampato). Si ricorda che la successione di Fibonacci e' definita ricorsivamente come:
+/*SUCCESSIONE DI FIBONACCI: 
+Scrivere un programma che legga da tastiera un numero intero n con n>=0 
+e stampi i valori della successione di Fibonacci, uno per riga, 
+fino al primo valore della successione strettamente maggiore di n (questo valore non va stampato). 
+Si ricorda che la successione di Fibonacci e' definita ricorsivamente come:
 f(0)=0	f(1)=1	f(i)=f(i-1)+f(i-2)
 input	13
 output	0	1	1	2	3	5	8	13*/
+
 #include<stdio.h>
 int main(){
 	int n, fib1=0, fib2=1, fibcorr;
