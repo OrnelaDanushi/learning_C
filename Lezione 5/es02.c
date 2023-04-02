@@ -1,5 +1,10 @@
-/*FUNZIONE MULTIPLI: Si realizzi un programma nel linguaggio C che, dati due interi N e M da standard input, facendo uso di una funzione di nome multipli, calcoli l'insieme degli interi appartenenti all'intervallo [1,N] che sono multipli di M. La chiamata a funzione dovra' stampare tutti gli elementi dell'insieme ordinati in ordine crescente.
+/*FUNZIONE MULTIPLI: 
+Si realizzi un programma che, dati due interi N e M da standard input, 
+facendo uso di una funzione di nome multipli, calcoli l'insieme degli interi 
+appartenenti all'intervallo [1,N] che sono multipli di M. 
+La chiamata a funzione dovra' stampare tutti gli elementi dell'insieme ordinati in ordine crescente.
 Input:	10	3		Output:	3	6	9	*/
+
 #include<stdio.h>
 int multipli(int n, int m){
 	int a[n],i;
