@@ -1,5 +1,13 @@
-/*RIDIMENSIONAMENTO ARRAY: Si realizzi un programma che legga 6 interi da tastiera e assegni i primi 5 valori letti ad altrettante posizioni di un array; si assuma di memorizzare il sesto valore in una variabile N. Si scriva una funzione che dato l'array inizializzato con i 5 valori letti da tastiera e l'intero N, restituisca l'array in input ridimensionato per contenere 5+N elementi, tale che ciascuno dei nuovi N elementi corrisponda alla somma dei numeri che lo precedono nell'array ad es: arr[i]=sommatoria per j=0 a i-1 di arr[j]. Nel main, si stampi a video il contenuto dell'array restituito dalla funzione. 
+/*RIDIMENSIONAMENTO ARRAY: 
+Si realizzi un programma che legga 6 interi da tastiera e assegni i primi 5 valori letti 
+ad altrettante posizioni di un array; si assuma di memorizzare il sesto valore in una variabile N. 
+Si scriva una funzione che dato l'array inizializzato con i 5 valori letti da tastiera e l'intero N, 
+restituisca l'array in input ridimensionato per contenere 5+N elementi, 
+tale che ciascuno dei nuovi N elementi corrisponda alla somma dei numeri che lo precedono nell'array 
+ad es: arr[i]=sommatoria per j=0 a i-1 di arr[j]. 
+Nel main, si stampi a video il contenuto dell'array restituito dalla funzione. 
 Input:	-1	2	3	0	4	3	Output:	-1	2	3	0	4	8	16	32	*/
+
 #include<stdio.h>
 #include<stdlib.h>
 void posizioni(int *v, int f, int somma){
