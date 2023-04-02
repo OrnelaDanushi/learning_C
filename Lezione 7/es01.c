@@ -1,9 +1,16 @@
-/*GESTORE DEL GATTILE: Si scriva un programma di gestione di un gattile che legga dall'input un intero n, quindi per n volte, legga:
+/*GESTORE DEL GATTILE: 
+Si scriva un programma di gestione di un gattile che legga dall'input un intero n, quindi per n volte, legga:
 -un codice identificativo del gatto (un intero);
 -l'eta' del gatto in anni (un intero);
 -il peso del gatto in kg (un float);
--il tipo di cibo assunto dal gatto, espresso come 0 per le crocchette, 1 per le scatolette, 2 per il tonno in scatola.
-Nello stesso ordine in cui sono stati immessi i dati dei gatti si stampino, uno per linea, i codici identificativi e il tipo di cibo di tutti i gatti che hanno problemi di dieta in giovane eta', ovvero abbiano meno di 4 anni e pesino piu' della media dei gatti. A fianco del codice identificativo, si stampi, separato da uno spazio, il tipo di cibo assunto dal gatto, ovvero crocchette, scatolette oppure tonno. N.B: Si consiglia di definirsi opportunamente una struct di nome gatto, e rappresentare il tipo di cibo come una enum. 
+-il tipo di cibo assunto dal gatto, espresso come 
+0 per le crocchette, 1 per le scatolette, 2 per il tonno in scatola.
+Nello stesso ordine in cui sono stati immessi i dati dei gatti si stampino, uno per linea, 
+i codici identificativi e il tipo di cibo di tutti i gatti che hanno problemi di dieta in giovane eta', 
+ovvero abbiano meno di 4 anni e pesino piu' della media dei gatti. 
+A fianco del codice identificativo, si stampi, separato da uno spazio, il tipo di cibo assunto dal gatto, 
+ovvero crocchette, scatolette oppure tonno. 
+N.B: Si consiglia di definirsi opportunamente una struct di nome gatto, e rappresentare il tipo di cibo come una enum. 
 Input:	5//n				Output:	6 crocchette	
 2	13	5.0	1			12 tonno
 6	3	6.0	0	
@@ -15,7 +22,8 @@ Input:	5//n				Output:	6 crocchette
 #include<stdlib.h>
 
 typedef enum{ 
-	/*e' implicito che crocchette=0, scatolette=1 e tonno=2 e cosi se ci dovessero essere altri ancora, possono anche essere scritti crocchette, scatolette, tonno*/
+	/*e' implicito che crocchette=0, scatolette=1 e tonno=2 
+	e cosi se ci dovessero essere altri ancora, possono anche essere scritti crocchette, scatolette, tonno*/
 	crocchette, 
 	scatolette, 
 	tonno
@@ -27,6 +35,7 @@ typedef struct{
 	float peso;
 	cibo svedese;
 }gatto;
+
 int main(){
 	int n, i=0;
 	float media=0, somma=0;
