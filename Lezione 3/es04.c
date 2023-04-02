@@ -1,5 +1,7 @@
-/*MAX:Scrivere un programma che legga da tastiera tre numeri interi e ne stampi il massimo.
+/*MAX:
+Scrivere un programma che legga da tastiera tre numeri interi e ne stampi il massimo.
 Input:	15	7	12	Output:	15*/
+
 #include<stdio.h>
 int main(){
 	int x, y, z, max=0;
