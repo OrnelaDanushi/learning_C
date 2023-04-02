@@ -8,30 +8,26 @@ int main(){
 	scanf("%d",&x);
 	scanf("%d",&y);
 	scanf("%d",&z);
-	if(x>max)
-		max=x;
-	if(y>max)
-		max=y;
-	if(z>max)
-		max=z;
-	printf("%d\n",max);
+
+	if(x>max)		max=x;
+	if(y>max)		max=y;
+	if(z>max)		max=z;
+
+	/*oppure
+	int max=0, max1=0;
+	if(x<y)		max1=y;
+	else 		max1=x;
+	if(max1<z)	max=z;
+	else 		max=max1;
+	*/
+	
+	/*oppure
+	if (x>=y && x>=z) max=x;
+	if (y>=x && y>=z) max=y;
+	if (z>=x && z>=y) max=z;
+	
+	*/
+
+	printf("%d\n",max);	
 	return 0;
 }
-
-/*oppure
-int main(){
-	int a, b, c, max=0, max1=0;
-	scanf("%d", &a);
-	scanf("%d", &b);
-	scanf("%d", &c);	
-	if(a<b)
-		max1=b;
-	else 
-		max1=a;
-	if(max1<c)
-		max=c;
-	else 
-		max=max1;
-	printf("%d\n", max);
-	return 0;
-}	*/
