@@ -1,5 +1,8 @@
-/*Scrivere un programma che legga da tastiera un numero N e stampi l'N-esimo numero di Fibonacci calcolato con la formula di Binet. Secondo questa formula, l'N-esimo numero di Fibonacci puo' essere espresso come: F(N)=(fi^N -(-fi)^-N)/(5)^(1/2) con fi=(1+5^(1/2))/2. N.B. Arrotondare all'intero piu' vicino.
+/*Scrivere un programma che legga da tastiera un numero N e stampi l'N-esimo numero di Fibonacci 
+calcolato con la formula di Binet. Secondo questa formula, l'N-esimo numero di Fibonacci puo' 
+essere espresso come: F(N)=(fi^N -(-fi)^-N)/(5)^(1/2) con fi=(1+5^(1/2))/2. N.B. Arrotondare all'intero piu' vicino.
 input:	10	output:	55	*/
+
 #include<stdio.h>
 #include<math.h>
 void binet(int v){
