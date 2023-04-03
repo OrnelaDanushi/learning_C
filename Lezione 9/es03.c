@@ -1,8 +1,12 @@
-/*Si realizzi un programma C che prenda in ingresso una stringa S (di al piu' 40 caratteri e contenente anche spazi) e stampi la stessa stringa invertita. BONUS(no extra punti): farlo in place, ossia senza allocare/utilizzare spazio aggiuntivo per la stringa invertita ma modificando direttamente la stringa letta.
+/*Si realizzi un programma che prenda in ingresso una stringa S (di al piu' 40 caratteri e contenente anche spazi) 
+e stampi la stessa stringa invertita. BONUS(no extra punti): farlo in place, ossia senza allocare/utilizzare spazio 
+aggiuntivo per la stringa invertita ma modificando direttamente la stringa letta.
 input:	Stringa invertita	output:	atitrevni agnirtS	*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+
 void invertita(char *s){
 	int i=0, lunghezza=0; 
 	while(s[i]!='\0'){
