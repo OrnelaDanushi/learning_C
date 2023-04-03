@@ -1,8 +1,11 @@
-/*Si realizzi un programma C che prenda in ingresso una stringa S (contenente anche spazi, di al piu' 40 caratteri) e un carattere c. Il programma deve stampare in uscita il numero di occorrenze di c in S. N.B. c'e' differenza tra maiuscole e minuscole.
+/*Si realizzi un programma che prenda in ingresso una stringa S (contenente anche spazi, di al piu' 40 caratteri) e un carattere c. 
+Il programma deve stampare in uscita il numero di occorrenze di c in S. N.B. c'e' differenza tra maiuscole e minuscole.
 input:	Hello World	o	output:	2	*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+
 void contaoccorrenze(char *s, char c){
 	int i=0, conta=0;
 	while(s[i]!='\0'){
