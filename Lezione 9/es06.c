@@ -1,10 +1,14 @@
-/*Si realizzi una funzione str3cat che accetta come input 3 stringhe (ciascuna lunga al piu' 40 caratteri) e ritorni una nuova stringa ottenuta come la concatenazione, separata da spazi, delle tre. Il programma deve leggere 3 stringhe e stampare in uscita le 3 stringhe seguite dal risultato dell'invocazione di str3cat sulle stess.
+/*Si realizzi una funzione str3cat che accetta come input 3 stringhe (ciascuna lunga al piu' 40 caratteri) 
+e ritorni una nuova stringa ottenuta come la concatenazione, separata da spazi, delle tre. 
+Il programma deve leggere 3 stringhe e stampare in uscita le 3 stringhe seguite dal risultato dell'invocazione di str3cat sulle stesse.
 input:	ciao	a	tutti
 output:	ciao	a	tutti	ciao a tutti	*/
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
 #define MAXLEN 1000
+
 void str3cat(char *str1, char *str2, char *str3){
 	printf("%s\n",str1);
 	printf("%s\n",str2);
