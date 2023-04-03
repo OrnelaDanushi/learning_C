@@ -1,5 +1,3 @@
-//ESAME TERZO APPELLO
-
 #include<stdio.h>
 #include<stdlib.h>
 
