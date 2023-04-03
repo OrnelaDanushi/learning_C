@@ -1,6 +1,11 @@
-/*Scrivere un programma che acquisisca da tastiera 2 successioni di interi positivi, entrambe terminate da un numero negativo, e le inserisca in 2 liste distinte. Realizzare poi una funzione che, prese in input le 2 liste, restituisca una nuova lista contenente l'intersezione ordinata tra le due: non vi devono quindi essere elementi ripetuti e i valori devono essere memorizzati in ordine crescente. si stampi il contenuto della lista intersezione. N.B. si possono organizzare le 2 liste in input come meglio si ritiene necessario.
+/*Scrivere un programma che acquisisca da tastiera 2 successioni di interi positivi, 
+entrambe terminate da un numero negativo, e le inserisca in 2 liste distinte. 
+Realizzare poi una funzione che, prese in input le 2 liste, restituisca una nuova lista contenente l'intersezione ordinata 
+tra le due: non vi devono quindi essere elementi ripetuti e i valori devono essere memorizzati in ordine crescente. 
+Si stampi il contenuto della lista intersezione. N.B. si possono organizzare le 2 liste in input come meglio si ritiene necessario.
 input:	4	5	6	7	-1	10	9	7	6	5	-1
 output:	5	6	7	*/
+
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct Il_node_struct{
