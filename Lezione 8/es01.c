@@ -1,12 +1,17 @@
-/*PILA: Le liste concatenate permettono di creare facilmente altre strutture dati, come ad es: le pile. Partendo dalla definizione di Il_node data a lezione realizzare le seguenti funzioni:
--Il_node *push(Il_node *head, int v) per aggiungere in cima alla lista un nuovo nodo contenente il valore v. Restituisce il puntatore alla nuova testa
--Il_node *pop(Il_node *head) per rimuovere il nodo in cima alla lista. Restituisce il puntatore alla nuova lista (fate attenzione al caso in cui la lista sia vuota: in questo caso il metodo non deve fare nulla).
+/*PILA: 
+Le liste concatenate permettono di creare facilmente altre strutture dati, come ad es: le pile. 
+Partendo dalla definizione di Il_node data realizzare le seguenti funzioni:
+-Il_node *push(Il_node *head, int v) per aggiungere in cima alla lista un nuovo nodo contenente il valore v. 
+Restituisce il puntatore alla nuova testa
+-Il_node *pop(Il_node *head) per rimuovere il nodo in cima alla lista. 
+Restituisce il puntatore alla nuova lista (attenzione al caso in cui la lista sia vuota: in questo caso il metodo non deve fare nulla).
 -void print(Il_node *head) per stampare il contenuto attuale della lista.
 Il programma dovra' acquisire da tastiera una lista di numeri interi. L'operazione da eseguire dipende dal valore acquisito:
 -se il valore e' strettamente maggiore di 0, inserisce il valore in lista mediante la funzione push;
 -se il valore e' pari a 0 richiama la funzione pop;
 -se il valore e' strettamente minore di 0 termina stampando il contenuto corrente della lista.
 Input:	4	1	0	10	8	0	0	2	-1 Output:	2	4	*/
+
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct Il_node_struct{int info; struct Il_node_struct *next;}Il_node;
