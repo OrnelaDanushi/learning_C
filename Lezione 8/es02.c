@@ -9,6 +9,7 @@ _se il valore letto v e' positivo e dispari, aggiungerlo in fondo alla lista
 _se il valore letto e' 0, terminare l'esecuzione del programma stampando, in ordine, gli elmenti della lista.
 input: 4	5	2	-4	-5	-3	9	2	0	
 output:	2	2	9	*/
+
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct Il_node_struct{
