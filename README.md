@@ -7,3 +7,4 @@ reference:
 in preparazione agli esami (triennale UniPi):
 - Programmazione 1 e laboratorio
 - Sistemi Operativi e laboratorio
+- Algoritmica e laboratorio
