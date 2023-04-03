@@ -1,14 +1,39 @@
-/*GESTORE CORSA 1000 METRI: Si implementi un gestore di gare di corsa. La gara, a cui partecipa un numero variabile di atleti, consiste in una corsa lunga 1000 metri. Gli atleti partono tutti insieme e i loro tempi parziali vengono misurati ogni 100 metri. Per ogni atleta vi saranno dunque 10 misurazioni, l'ultima delle quali e' il tempo di raggiungimento del traguardo. Il programma prende in input le informazioni sugli atleti e i loro tempi parziali misurati durante una gara, ed elabora delle statistiche. Dato lo scheletro di codice qui riportato (e che puo' essere scaricato dagli allegati), lo si completi aggiungendo l'implementazione delle funzioni richieste.
+/*GESTORE CORSA 1000 METRI: 
+Si implementi un gestore di gare di corsa. La gara, a cui partecipa un numero variabile di atleti, consiste in una corsa lunga 1000 metri. 
+Gli atleti partono tutti insieme e i loro tempi parziali vengono misurati ogni 100 metri. 
+Per ogni atleta vi saranno dunque 10 misurazioni, l'ultima delle quali e' il tempo di raggiungimento del traguardo. 
+Il programma prende in input le informazioni sugli atleti e i loro tempi parziali misurati durante una gara, ed elabora delle statistiche. 
+Dato lo scheletro di codice qui riportato (e che puo' essere scaricato dagli allegati), lo si completi aggiungendo l'implementazione delle funzioni richieste.
+
 #include<stdio.h>
 #include<stdlib.h>
+
 typedef struct{
 	int tempi[10]; //Tempi misurati ogni 100 metri
 	char nome[20]; //Nome dell'atleta
 }corridore;
-corridore *leggiInput(int *dim);	//funzioni da implementare
+
+// legge un numero n e successivamente le informazioni riguardanti n atleti, inserendoli in un array nell'ordine in cui vengono letti. 
+// Per ogni atleta, vengono letti prima il suo nome (una parola che consiste solo di caratteri senza spazi, lunga in tutto meno di 20 caratteri), 
+// quindi 10 interi, corrispondenti alle misurazioni dei tempi parziali, in secondi. 
+// La funzione retituisce l'array che contiene, per ogni atleta, una struttura corridore, contenente le informazioni lette. 
+// Inoltre, la funzione scrive, nell'indirizzo puntato da dim, il valore n, ovvero il numero di elementi dell'array restituito.
+corridore *leggiInput(int *dim);	
+
+// accetta come parametri un array di strutture corridore e la sua dimensione dim, 
+// restituisce l'indice (posizione nell'array) dell'atleta che ha vinto la gara.
 int trovavincitore(corridore *vect, int dim);
+
+// accetta come parametri un corridore c. 
+// A partire dai tempi parziali del corridore, la funzione genera e restituisce un array contenente i tempi di percorrenza di ogni tratto. 
+// Ad esempio, se i tempi di percorrenza del corridore sono T=[10,20,30,40,49,61,72,82,92,102], l'array risultante sara' I=[10,10,10,10,9,12,11,10,10,10].
 int *tempitointevalli(corridore c);
+
+// accetta come parametro una struttura corridore. A partire dai tempi parziali, restituisce un array A contenente 10 interi di valore 0 o 1. 
+// L'elemento i-esimo di A avra' valore 1 se nel tratto i l'atleta ha fatto uno sprint, ovvero ha percorso il tratto in meno della meta' del tempo 
+// rispetto alla media degli altri intervalli. Varra' 0 altrimenti.
 int *trovasprint(corridore c);
+
 int main(){
 	corridore *input;
 	int dim, dimsprint, vincitore, i, j, *intervalli, *sprint;
@@ -37,11 +62,6 @@ int main(){
 	}
 	return 0;
 }
-Le funzioni devono implementare le seguenti operazioni:
--leggiInput: legge un numero n e successivamente le informazioni riguardanti n atleti, inserendoli in un array nell'ordine in cui vengono letti. Per ogni atleta, vengono letti prima il suo nome (una parola che consiste solo di caratteri senza spazi, lunga in tutto meno di 20 caratteri), quindi 10 interi, corrispondenti alle misurazioni dei tempi parziali, in secondi. La funzione retituisce l'array che contiene, per ogni atleta, una struttura corridore, contenente le informazioni lette. Inoltre, la funzione scrive, nell'indirizzo puntato da dim, il valore n, ovvero il numero di elementi dell'array restituito.
--trovavincitore: la funzione accetta come parametri un array di strutture corridore e la sua dimensione dim, e restituisce l'indice (posizione nell'array) dell'atleta che ha vinto la gara.
--tempitointervalli: la funzione accetta come parametri un corridore c. A partire dai tempi parziali del corridore, la funzione genera e restituisce un array contenente i tempi di percorrenza di ogni tratto. Ad esempio, se i tempi di percorrenza del corridore sono T=[10,20,30,40,49,61,72,82,92,102], l'array risultante sara' I=[10,10,10,10,9,12,11,10,10,10].
--trovasprint: la funzione accetta come parametro una struttura corridore. A partire dai tempi parziali, restituisce un array A contenente 10 interi di valore 0 o 1. L'elemento i-esimo di A avra' valore 1 se nel tratto i l'atleta ha fatto uno sprint, ovvero ha percorso il tratto in meno della meta' del tempo rispetto alla media degli altri intervalli. Varra' 0 altrimenti.
 input:	3							output:	Stampa dei valori in input: (3 atleti)	
 	mohammed_ali 12 24 32 45 50 60 70 81 92 97			Tempi per l'atleta mohammed_ali: 12 24 32 45 50 60 70 81 92 97	
 	salvio_berluschini 12 22 30 43 48 55 60 71 82 86		Tempi per l'atleta salvio_berluschini: 12 22 30 43 48 55 60 71 82 86
