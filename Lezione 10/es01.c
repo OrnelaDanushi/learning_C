@@ -1,10 +1,30 @@
-/*Dato lo scheletro di codice qui riportato (e che puo' essere scaricare dagli allegati), lo si completi aggiungendo l'implementazione delle funzioni richieste.
+/*Dato lo scheletro di codice riportato (e che puo' essere scaricato dagli allegati), lo si completi aggiungendo l'implementazione delle funzioni richieste.
+
 #include<stdio.h>
 #include<stdlib.h>
-int *leggiInput(int *dim);	//funzioni da implementare:
+
+//funzioni da implementare:
+
+// legge un numero n e successivamente n interi, inserendoli in un array nell'ordine in cui vengono letti. 
+// restituisce l'array e scrive, nell'indirizzo puntato da dim, il valore n, ovvero la dimensione dell'array;
+int *leggiInput(int *dim);	
+
+// accetta come parametri un array di interi vect e la sua dimensione dim. 
+// Deve creare e restituire un nuovo array di interi contenente solo la prima occorrenza degli elementi contenuti nell'array iniziale 
+// (mantenendo il loro ordine). Nell'indirizzo puntato da dim_nodup viene memorizzata la dimensione del nuovo array;
 int *eliminaDup(int *vect, int dim, int *dim_nodup);
+
+// accetta come parametri un array di interi vect e la sua dimensione dim. 
+// Restituisce 1 se viene soddisfatta la proprieta': esiste i appartenente a [0,dim) tale che vect[i]=alla sommatoria per j 
+// appartenente a [0,dim) e j!=i del vect[j] oppure 0 in caso contrario;
 int ugualeASomma(int *vect, int dim);
+
+// accetta come parametri un array di interi vect e la sua dimensione dim. 
+// Ritorna un array di interi, dove ciascuna posizione i assume valore 1 se vale la seguente proprieta': 
+// per ogni j appartenente a [i+1,dim) tale che vect[i]>vect[j] mentre assume valore 0 in caso contrario. 
+// Si noti che per l'ultimo elemento dell'array la condizione e' sempre soddisfatta.
 int *maggioreDeiSuccessivi(int *vect, int dim);
+
 int main(){
 	int *input, *nodup, *results, dim, dim_nodup, i;
 	input=leggiInput(&dim);	//legge l'input
@@ -22,24 +42,23 @@ int main(){
 		printf("%d\n", results[i]);
 	return 0;
 }
-Le funzioni devono implementare le seguenti operazioni:
--leggiInput: legge un numero n e successivamente n interi, inserendoli in un array nell'ordine in cui vengono letti. La funzione restituisce l'array e scrive, nell'indirizzo puntato da dim, il valore n, ovvero la dimensione dell'array;
--eliminaDup: la funzione accetta come parametri un array di interi vect e la sua dimensione dim. Deve creare e restituire un nuovo array di interi contenente solo la prima occorrenza degli elementi contenuti nell'array iniziale (mantenendo il loro ordine). Nell'indirizzo puntato da dim_nodup viene memorizzata la dimensione del nuovo array;
--ugualeASomma: la funzione accetta come parametri un array di interi vect e la sua dimensione dim. Restituisce 1 se viene soddisfatta la proprieta': esiste i appartenente a [0,dim) tale che vect[i]=alla sommatoria per j appartenente a [0,dim) e j!=i del vect[j] oppure 0 in caso contrario;
--maggioreDeiSuccessivi: la funzione accetta come parametri un array di interi vect e la sua dimensione dim. Ritorna un array di interi, dove ciascuna posizione i assume valore 1 se vale la seguente proprieta': per ogni j appartenente a [i+1,dim) tale che vect[i]>vect[j] mentre assume valore 0 in caso contrario. Si noti che per l'ultimo elemento dell'array la condizione e' sempre soddisfatta.
 input:	6	2	2	3	10	4	1
-output:	Stampa dei valori in input: (6 valori)	2	2	3	10	4	1	Stampa dei valori senza duplicati: (5 valori)	2	3	10	4	1	Risultato di ugualeASomma: 1	Risultato maggioreDeiSuccessivi:	0	0	1	1	1	*/ 
+output:	
+Stampa dei valori in input: (6 valori)	2	2	3	10	4	1	
+Stampa dei valori senza duplicati: (5 valori)	2	3	10	4	1	
+Risultato di ugualeASomma: 1	
+Risultato maggioreDeiSuccessivi:	0	0	1	1	1	*/ 
 
 #include<stdio.h>
 #include<stdlib.h>
 
-// Funzioni  da implementare
 int *leggiInput(int *dim){
 	scanf("%d", &(*dim));	//oppure 	scanf("%d", dim);	
 	int *a=(int *)malloc((*dim)*sizeof(int)), i;
 	for(i=0; i<*dim; i++)	scanf("%d", &a[i]);
 	return a;
 }
+
 int *eliminaDup(int *vect, int dim, int *dimnodup){
 	if(dim!=0){
 		*dimnodup=1;
