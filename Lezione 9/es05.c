@@ -1,6 +1,11 @@
-/*Si realizzi un programma che legga da tastiera un intero n e successivamente n parole (una per riga). Il programma deve poi stampare prima tutte le parole palindrome (nell'ordine in cui sono state lette) e successivamente tutte le restanti parole (sempre in ordine di apparizione). N.B Ogni singola parola e' lunga al piu' 40 caratteri, e per allocare dinamicamente un array di stringhe dobbiamo prima allocare un array di char*, e per ciascuna posizione dell'array, dobbiamo allocare lo spazio sufficiente per mantenere una stringa.
+/*Si realizzi un programma che legga da tastiera un intero n e successivamente n parole (una per riga). 
+Il programma deve poi stampare prima tutte le parole palindrome (nell'ordine in cui sono state lette) 
+e successivamente tutte le restanti parole (sempre in ordine di apparizione). 
+N.B Ogni singola parola e' lunga al piu' 40 caratteri, e per allocare dinamicamente un array di stringhe 
+dobbiamo prima allocare un array di char*, e per ciascuna posizione dell'array, dobbiamo allocare lo spazio sufficiente per mantenere una stringa.
 input:	5	anna	prova	otto	ingegni	ciao
 output:	anna	otto	ingegni	prova	ciao	*/
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
