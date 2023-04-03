@@ -1,6 +1,11 @@
-/*Scrivere un programma che acquisisca da tastiera una successione di numeri interi positivi e li inserisca in maniera ordinata (crescente) all'interno di una lista. La lista puo' contenere duplicati. L'acquisizione da tastiera termina quando si incontra il primo valore negativo (che non va inserito in lista) e viene stampato il contenuto corrente della lista.
+/*Scrivere un programma che acquisisca da tastiera una successione di numeri interi positivi 
+e li inserisca in maniera ordinata (crescente) all'interno di una lista. 
+La lista puo' contenere duplicati. 
+L'acquisizione da tastiera termina quando si incontra il primo valore negativo (che non va inserito in lista) 
+e viene stampato il contenuto corrente della lista.
 input:	4	5	7	1	2	6	9	10	-1
 output:	1	2	4	5	6	7	9	10	*/
+
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct Il_node_struct{
