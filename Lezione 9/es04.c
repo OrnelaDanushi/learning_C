@@ -1,8 +1,11 @@
-/*Si realizzi un programma che legga una parola da tastiera e stampi 1 se la parola e' palindroma, 0 altrimenti. Ricordiamo che una parola e' palindroma se letta a rovescio rimane identica. N.B. la parola e' lunga al piu' 40 caratteri. 
+/*Si realizzi un programma che legga una parola da tastiera e stampi 1 se la parola e' palindroma, 0 altrimenti. 
+Ricordiamo che una parola e' palindroma se letta a rovescio rimane identica. N.B. la parola e' lunga al piu' 40 caratteri. 
 input:	ingegni	output:	1	*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+
 void palindroma(char *str){
 	int i=0, j=0, trovato=0;
 	char str2[strlen(str)];
